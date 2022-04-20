@@ -1,0 +1,32 @@
+Started by user mightyshido
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/GitCI
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/GitCI/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/MopyKing/GitCI # timeout=10
+Fetching upstream changes from https://github.com/MopyKing/GitCI
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+ > git fetch --tags --force --progress -- https://github.com/MopyKing/GitCI +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision f47f4ae6968b8ba33586cd891e2b790525ebdb98 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f f47f4ae6968b8ba33586cd891e2b790525ebdb98 # timeout=10
+Commit message: "6th check for cd command after granting permissions with chmod"
+ > git rev-list --no-walk f47f4ae6968b8ba33586cd891e2b790525ebdb98 # timeout=10
+[GitCI] $ /bin/sh -xe /tmp/jenkins1428163954615955135.sh
++ javac shido.java
++ java shido
+Shido V9..1
+Shido V9..2
+Shido V9..3
+Shido V9..4
+Shido V9..5
+Shido V9..6
+Shido V9..7
+Shido V9..8
+Shido V9..9
+Shido V9..10
+Finished: SUCCESS
